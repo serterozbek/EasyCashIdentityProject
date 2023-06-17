@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ namespace EasyCashIdentityProject.EntityLayer.Concrete
 {
     public class CustomerAccount
     {
+        [Key]
         public int CustomerAcoountID { get; set; }
         public string CustomerAccountNumber  { get; set; }
         public string CustomerAccountCurrency { get; set;}
